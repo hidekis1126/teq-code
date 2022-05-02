@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>teq-code</title>
+</head>
+<body>
+    <h1>ブログコンテンツのテスト</h1>
+    <p>本文とコード表示をテストします</p>
+    <p>タイトル: {{ blog.title }}</p>
+    <p>カテゴリ: {{ blog.category }}</p>
+    <p>本文: {{ blog.content }}</p>
+    <pre class="prettyprint linenums">
+        {{ blog.code }}
+    </pre>
+<!--    <p>下記のコードはGoogle code-prettifyを使ってコードを読みやすくしています。</p>
+    <pre class="prettyprint lang-js">
+    </pre>
+    <h1>コードの埋め込み</h1>
+    <p>技術ブログ用のコードを反映</p>
+    <pre class="prettyprint linenums">
+    </pre>
+-->
+</body>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>   
+</html>
